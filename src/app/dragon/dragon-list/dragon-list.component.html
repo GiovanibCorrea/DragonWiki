@@ -1,0 +1,28 @@
+<h3 class="title">
+  Lista de Dragões
+</h3>
+
+<table class="table" *ngIf="!isLoadingResults">
+  <thead>
+    <tr class="label">
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dragon of dataDragons">
+      <td>
+        <strong>{{dragon.name}}</strong>
+      </td>
+      <td>
+        <small>{{dragon.type}}</small>
+      </td>
+      <td class="buttons">
+        <button class="btn view" title="Visualizar Dragão" (click)=viewDragon(dragon.id)>Ver</button>
+        <button class="btn edit" title="Editar Dragão" (click)=editDragon(dragon.id)>Editar</button>
+        <button class="btn delete" title="Excluir Dragão" (click)=deleteDragon(dragon.id)>Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

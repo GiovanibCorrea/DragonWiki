@@ -1,0 +1,25 @@
+<nav class="navbar" *ngIf="showMenu">
+  <a class="navbar-brand" routerLink="/">
+    DragonWiki
+  </a>
+
+  <ul class="navbar-nav" id="navbarNav">
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/dragon/dragon-list">Lista de Dragões</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link" routerLink="/dragon/dragon-new">Cadastrar Dragões</a>
+    </li>
+  </ul>
+
+  <ul class="logout">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-item pointer" (click)=logout()>Sair</a>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

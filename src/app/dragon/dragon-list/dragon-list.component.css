@@ -1,0 +1,46 @@
+.title {
+    text-align: center;
+}
+
+.table {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.table thead {
+    font-size: 16px;
+}
+
+.table tr {
+    height: 50px;
+}
+
+.table tr td .btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.table .buttons {
+    text-align: center;
+}
+
+.table tr td .btn:last-child {
+    margin-right: 0px;
+}
+
+.view {
+    background: #5bc0de;
+}
+
+.edit {
+    background: #5cb85c;
+}
+
+.delete {
+    background: #d9534f;
+}

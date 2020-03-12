@@ -1,0 +1,29 @@
+<h3 class="title" *ngIf="!editMode" >
+  Novo Dragão
+</h3>
+<h3 class="title" *ngIf="editMode" >
+  Editar Dragão
+</h3>
+
+<form #formDragon="ngForm" (ngSubmit)="onFormSubmit()">
+  <div class="form-item">
+    <label for="txtName">Nome do Dragão</label>
+    <input type="text" class="form-control" id="txtName" aria-describedby="nameHelp" placeholder="Nome do Dragão"
+      [(ngModel)]="dragon.name" name="name" required #name="ngModel">
+    <div class="text-danger" *ngIf="!name.valid && name.touched">
+      * campo obrigatório
+    </div>
+  </div>
+  
+  <div class="form-item">
+    <label for="txtType">Tipo</label>
+    <input type="text" class="form-control" id="txtType" aria-describedby="typeHelp" placeholder="Tipo"
+      [(ngModel)]="dragon.type" name="type" required #type="ngModel">
+    <div class="text-danger" *ngIf="!type.valid && type.touched">
+      * campo obrigatório
+    </div>
+  </div>
+  
+  <button type="submit" class="btn save" [disabled]="!formDragon.valid">Gravar Dados</button>
+
+</form>

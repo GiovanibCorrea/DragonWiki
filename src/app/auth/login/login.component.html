@@ -1,0 +1,17 @@
+<div class="login-box">
+  <h3>Bem vindo!</h3>
+
+  <div class="form-group">
+    <input [(ngModel)]="user.userName" id="userName1" type="text" class="form-control"
+      placeholder="E-mail" />
+  </div>
+
+  <div class="form-group">
+    <input [(ngModel)]="user.userPassword" id="userPassword1" type="password"
+      class="form-control" placeholder="Senha" />
+  </div>
+
+  <div class="form-group">
+    <button type="button" class="btnSubmit" id="btnLogin" (click)="logIn()"> Entrar </button>
+  </div>
+</div>
