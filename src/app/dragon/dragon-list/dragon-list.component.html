@@ -7,17 +7,25 @@
     <tr class="label">
       <th>Nome</th>
       <th>Tipo</th>
+      <th>Data de Criação</th>
       <th>Ações</th>
     </tr>
   </thead>
+  
   <tbody>
     <tr *ngFor="let dragon of dataDragons">
       <td>
         <strong>{{dragon.name}}</strong>
       </td>
+      
       <td>
-        <small>{{dragon.type}}</small>
+        {{dragon.type}}
       </td>
+      
+      <td>
+        {{dragon.createdAt | date: 'dd/MM/yyyy'}}
+      </td>
+      
       <td class="buttons">
         <button class="btn view" title="Visualizar Dragão" (click)=viewDragon(dragon.id)>Ver</button>
         <button class="btn edit" title="Editar Dragão" (click)=editDragon(dragon.id)>Editar</button>

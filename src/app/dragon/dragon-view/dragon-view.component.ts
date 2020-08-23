@@ -6,7 +6,7 @@ import { dragon } from 'src/app/shared/models/dragon';
 @Component({
   selector: 'app-dragon-view',
   templateUrl: './dragon-view.component.html',
-  styleUrls: ['./dragon-view.component.css']
+  styleUrls: ['./dragon-view.component.scss']
 })
 export class DragonViewComponent implements OnInit {
 

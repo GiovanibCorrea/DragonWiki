@@ -1,0 +1,54 @@
+@import 'src/sass/style';
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar {
+  background: $background;
+  padding: $p-5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  float: left;
+  color: $secundary-color;
+  font-size: $size-3;
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0px 15px;
+  padding: $p-3;
+
+  .nav-item {
+    float: left;
+    font-size: $size-2;
+    color: $primary-color;
+    margin-right: $m-6;
+
+    &:last-child {
+      margin-right: $m-4;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+.logout {
+  float: right;
+  color: $primary-color;
+  margin: $m-4;
+  padding: $p-3;
+}
+
+.pointer {
+  cursor: pointer;
+}
+

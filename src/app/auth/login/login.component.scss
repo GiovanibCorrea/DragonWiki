@@ -1,0 +1,43 @@
+@import 'src/sass/style';
+
+.login-box {
+  width: 50%;
+  margin: 150px auto 0 auto;
+  background: $background;
+  border-radius: $br-1;
+  padding: $p-4;
+
+  h3 {
+    text-align: center;
+    color: $primary-color;
+    margin: 0 0 15px 0;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.form-group {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+  input {
+    width: 100%;
+    margin-bottom: $m-5;
+    border: none;
+    padding: $p-2;
+    border-radius: $br-2;
+  }
+  
+  button {
+    font-size: $size-1;
+    padding: 10px 15px;
+    margin: $m-3;
+    background-color: $primary-color;
+    color: $secundary-color;
+    border: none;
+    border-radius: $br-1;
+  }
+}

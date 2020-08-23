@@ -1,0 +1,70 @@
+@import 'src/sass/style';
+
+.title {
+    text-align: center;
+}
+
+.table {
+    width: 80%;
+    margin: $m-3;
+
+    tr {
+        height: 50px;
+        
+        &:nth-child(odd) {
+            background-color:#fff;
+        }
+
+        &:nth-child(even) {
+            background-color:#ccc;
+        } 
+        
+        td {
+            .btn {
+                padding: $p-1;
+                border-radius: $br-2;
+                border: none;
+                color: $secundary-color;
+                font-size: $size-2;
+                margin-right: $m-5;
+                cursor: pointer;
+                width: 72px;
+                
+                &:last-child {
+                    margin-right: $m-4;
+                }
+
+                @media (max-width: 900px) {
+                    margin-right: $m-4;
+                    margin-bottom: $m-5;
+                }
+            }
+        } 
+
+        .buttons {
+            text-align: center;
+
+            .view {
+                background: #5bc0de;
+            }
+
+            .edit {
+                background: #5cb85c;
+            }
+
+            .delete {
+                background: #d9534f;
+            }
+        }
+    }
+
+    thead {
+        font-size: $size-2;
+    }
+}
+
+
+
+
+
+

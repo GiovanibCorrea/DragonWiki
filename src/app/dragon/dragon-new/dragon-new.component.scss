@@ -1,0 +1,32 @@
+@import 'src/sass/style';
+
+form {
+    text-align: center;
+}
+
+.form-item {
+    float: left;
+    width: 100%;
+    text-align: left;
+
+    label {
+        width: 100%;
+        float: left;
+    }
+    
+    input {
+        width: 100%;
+        margin: $m-1;
+        padding: $p-1;
+    }
+}
+
+.save {
+    background: #5cb85c;
+    padding: $p-1;
+    font-size: $size-2;
+    color: $secundary-color;
+    margin: $m-3;
+    border: none;
+    border-radius: $br-2;
+}

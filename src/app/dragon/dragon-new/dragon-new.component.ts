@@ -7,7 +7,7 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-dragon-new',
   templateUrl: './dragon-new.component.html',
-  styleUrls: ['./dragon-new.component.css']
+  styleUrls: ['./dragon-new.component.scss']
 })
 export class DragonNewComponent implements OnInit {
 

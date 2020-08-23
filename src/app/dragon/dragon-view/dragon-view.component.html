@@ -1,7 +1,7 @@
 <div *ngIf="!isLoadingResults">
   <div class="header-dragon">
     <h3 class="title-page">
-      Dragão {{dataDragon?.name}}
+      Dragão {{dataDragon.name}}
     </h3>
     
     <div>
@@ -18,27 +18,27 @@
     <div class="dragon-info">
         <h5 class="dragon-label">Código</h5>
       
-        <h5 class="dragon-info-data">{{dataDragon?.id}}</h5>
+        <h5 class="dragon-info-data">{{dataDragon.id}}</h5>
     </div>
     <div class="dragon-info">
         <h5 class="dragon-label">Nome</h5>
       
-        <h5 class="dragon-info-data">{{dataDragon?.name}}</h5>
+        <h5 class="dragon-info-data">{{dataDragon.name}}</h5>
     </div>
     <div class="dragon-info">
         <h5 class="dragon-label">Tipo</h5>
       
-        <h5 class="dragon-info-data">{{dataDragon?.type}}</h5>
+        <h5 class="dragon-info-data">{{dataDragon.type}}</h5>
     </div>
     <div class="dragon-info">
         <h5 class="dragon-label">Data de Criação</h5>
       
-        <h5 class="dragon-info-data">{{dataDragon?.createdAt | date:'dd/MM/yyyy'}}</h5>
+        <h5 class="dragon-info-data">{{dataDragon.createdAt | date:'dd/MM/yyyy'}}</h5>
     </div>
-    <div class="dragon-info" *ngIf="dataDragon?.updatedAt">
+    <div class="dragon-info" *ngIf="dataDragon.updatedAt">
         <h5 class="dragon-label">Atualizado em</h5>
       
-        <h5 class="dragon-info-data">{{dataDragon?.updatedAt | date:'dd/MM/yyyy'}}</h5>
+        <h5 class="dragon-info-data">{{dataDragon.updatedAt | date:'dd/MM/yyyy'}}</h5>
     </div>
   </div>
 

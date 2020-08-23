@@ -1,0 +1,37 @@
+@import 'src/sass/style';
+
+.header-dragon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        background: rgba(0, 230, 109, .7);
+        padding: $p-1;
+        color: $secundary-color;
+        margin-left: $m-5;
+        cursor: pointer;
+        border-radius: $br-2;
+    }
+}
+
+.dragon-data {
+    .dragon-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .dragon-label {
+            margin-right: $m-6;
+        }
+        
+        h5 {
+            margin: $m-2;
+        }
+
+        .dragon-info-data {
+            font-weight: 400;
+        }
+    }
+}

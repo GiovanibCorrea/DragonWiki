@@ -155,5 +155,10 @@
       }
     }
   },
-  "defaultProject": "DragoWiki"
+  "defaultProject": "DragoWiki",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
